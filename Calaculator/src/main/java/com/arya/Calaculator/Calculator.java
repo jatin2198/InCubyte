@@ -4,7 +4,7 @@ public class Calculator {
 
 	
 	public int Add(String number) {
-		return -1;
+		return 0;
 		
 		
 		
