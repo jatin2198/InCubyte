@@ -85,7 +85,7 @@ public class CaluatorTest {
 	//Numbers bigger than 1000 should be ignored, so adding 2 + 1001 = 2
 	@Test
 	
-	public void BiggerNum() {
+	public void biggerNum() {
 		
 		Assert.assertEquals(2, cal.Add("2;1001"));
 	}

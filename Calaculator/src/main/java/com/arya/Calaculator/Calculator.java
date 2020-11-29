@@ -26,14 +26,18 @@ public class Calculator {
 					
 					int num=Integer.parseInt(data);
 					
-					if(num>0) {
-						
-						sum=sum+num;
-					}
 					
-					else {
+					
+					
+					
+					if(num<0) {
 						
 						throw new ArithmeticException("Negative numbers not allowed"+num);
+					}
+					
+					else if(num>0&&num<=1000) {
+						
+						sum=sum+num;
 					}
 				}
 				
