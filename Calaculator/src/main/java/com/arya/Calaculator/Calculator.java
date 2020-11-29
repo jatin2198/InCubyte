@@ -4,10 +4,16 @@ public class Calculator {
 
 	
 	public int Add(String number) {
-		if(number.length()>3) {
+		/*if(number.length()>3) {
 			
 			throw new NullPointerException("length greater than 2");
 		}
+		*/
+		
+//		if(!number.isEmpty()) {
+//			
+//			
+//		}
 		
 		return 0;
 		

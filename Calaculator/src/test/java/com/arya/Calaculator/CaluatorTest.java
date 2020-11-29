@@ -35,4 +35,12 @@ public class CaluatorTest {
 		Assert.assertTrue(true);
 	}
 	
+	
+	//UnkonowAmount of values need to Handle
+	
+	
+	public void UnknowAmountofString() {
+		
+		Assert.assertEquals(1+2+3+4, cal.Add("1,2,3,4"));
+	}
 }
