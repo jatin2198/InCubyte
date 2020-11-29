@@ -53,4 +53,15 @@ public class CaluatorTest {
 		
 		Assert.assertEquals(0, cal.Add("1\n"));
 	}
+	
+//Support different delimiters
+	
+	@Test
+	
+	public void differentDelimenter() {
+		
+		Assert.assertEquals(3, cal.Add("//;\n1;2"));
+		
+	}
+	
 }
