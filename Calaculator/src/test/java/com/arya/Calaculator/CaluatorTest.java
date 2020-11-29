@@ -43,4 +43,12 @@ public class CaluatorTest {
 		
 		Assert.assertEquals(10, cal.Add("1,2,3,4"));
 	}
+	
+	//Allow the Add method to handle new lines between numbers
+	@Test
+	
+	public void AllowNewLine() {
+		
+		Assert.assertEquals(6, cal.Add("1\n2,3"));
+	}
 }
