@@ -12,7 +12,7 @@ public class Calculator {
 		
 		
 		
-		String[] values=number.trim().split("[,\n//';']");
+		String[] values=number.trim().split("[^0-9]");
 		if(values.length>1) {
 			
 		

@@ -62,6 +62,12 @@ public class CaluatorTest {
 		
 		Assert.assertEquals(3, cal.Add("//;\n1;2"));
 		
+		Assert.assertEquals(6, cal.Add("//[***]\n1***2***3")); ///Delimiters can be of any length with the following format
+		
+		Assert.assertEquals(6, cal.Add("//[*][%]\\n1*2%3")); ///Allow multiple delimiters like this: “//[delim1][delim2]\n”
+		
+		//make sure you can also handle multiple delimiters with length longer than one char
+		
 	}
 	
 }
