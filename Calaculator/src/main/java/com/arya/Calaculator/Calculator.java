@@ -10,10 +10,21 @@ public class Calculator {
 		}
 		*/
 		
-//		if(!number.isEmpty()) {
-//			
-//			
-//		}
+		if(!number.trim().isEmpty()) {
+			
+			String[] values=number.split(",");
+			
+			int sum=0;
+			
+			for(String data:values) {
+				
+				 sum+=Integer.parseInt(data);
+				
+				
+			}
+			
+			return sum;
+		}
 		
 		return 0;
 		

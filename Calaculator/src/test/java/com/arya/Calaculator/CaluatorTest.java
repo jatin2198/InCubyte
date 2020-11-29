@@ -26,7 +26,7 @@ public class CaluatorTest {
 		Assert.assertTrue(true);
 		
 	}
-	@Test(expected=NullPointerException.class)
+	@Test
 	
 	public void NonEmptyMorethantwo() {
 		
@@ -38,9 +38,9 @@ public class CaluatorTest {
 	
 	//UnkonowAmount of values need to Handle
 	
-	
+	@Test
 	public void UnknowAmountofString() {
 		
-		Assert.assertEquals(1+2+3+4, cal.Add("1,2,3,4"));
+		Assert.assertEquals(10, cal.Add("1,2,3,4"));
 	}
 }
