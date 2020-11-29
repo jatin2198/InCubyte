@@ -70,4 +70,16 @@ public class CaluatorTest {
 		
 	}
 	
+	//Calling Add with a negative number will throw an exception “negatives not allowed” - and the negative that was passed
+	
+	@Test
+	
+	public void negativeValues() {
+		
+		cal.Add("-1;2");
+		
+		Assert.assertTrue(false);
+		
+	}
+	
 }
