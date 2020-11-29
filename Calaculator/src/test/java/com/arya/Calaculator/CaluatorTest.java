@@ -26,5 +26,13 @@ public class CaluatorTest {
 		Assert.assertTrue(true);
 		
 	}
+	@Test
+	
+	public void NonEmptyMorethantwo() {
+		
+		cal.Add("1,2,3");
+		
+		Assert.assertTrue(true);
+	}
 	
 }
