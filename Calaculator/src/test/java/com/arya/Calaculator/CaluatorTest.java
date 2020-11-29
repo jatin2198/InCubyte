@@ -26,7 +26,7 @@ public class CaluatorTest {
 		Assert.assertTrue(true);
 		
 	}
-	@Test
+	@Test(expected=NullPointerException.class)
 	
 	public void NonEmptyMorethantwo() {
 		
