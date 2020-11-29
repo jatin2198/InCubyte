@@ -50,5 +50,7 @@ public class CaluatorTest {
 	public void AllowNewLine() {
 		
 		Assert.assertEquals(6, cal.Add("1\n2,3"));
+		
+		Assert.assertEquals(0, cal.Add("1\n"));
 	}
 }

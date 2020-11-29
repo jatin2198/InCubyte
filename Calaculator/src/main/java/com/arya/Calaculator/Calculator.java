@@ -10,9 +10,12 @@ public class Calculator {
 		}
 		*/
 		
-		if(!number.trim().isEmpty()) {
+		
+		
+		String[] values=number.trim().split("[,\n]");
+		if(values.length>1) {
 			
-			String[] values=number.split(",");
+		
 			
 			int sum=0;
 			
