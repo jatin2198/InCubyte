@@ -12,7 +12,7 @@ public class Calculator {
 		
 		
 		
-		String[] values=number.trim().split("[,\n]");
+		String[] values=number.trim().split("[,\n//';']");
 		if(values.length>1) {
 			
 		
@@ -21,8 +21,9 @@ public class Calculator {
 			
 			for(String data:values) {
 				
+				if(!data.isEmpty()) {
 				 sum+=Integer.parseInt(data);
-				
+				}
 				
 			}
 			
