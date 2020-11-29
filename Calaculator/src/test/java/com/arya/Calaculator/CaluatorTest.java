@@ -72,7 +72,7 @@ public class CaluatorTest {
 	
 	//Calling Add with a negative number will throw an exception “negatives not allowed” - and the negative that was passed
 	
-	@Test
+	@Test(expected=ArithmeticException.class)
 	
 	public void negativeValues() {
 		

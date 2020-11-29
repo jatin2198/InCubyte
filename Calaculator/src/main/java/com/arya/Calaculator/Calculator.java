@@ -12,7 +12,7 @@ public class Calculator {
 		
 		
 		
-		String[] values=number.trim().split("[^0-9]");
+		String[] values=number.trim().split("[^-0-9]");
 		if(values.length>1) {
 			
 		
@@ -22,7 +22,19 @@ public class Calculator {
 			for(String data:values) {
 				
 				if(!data.isEmpty()) {
-				 sum+=Integer.parseInt(data);
+				/// sum+=Integer.parseInt(data);
+					
+					int num=Integer.parseInt(data);
+					
+					if(num>0) {
+						
+						sum=sum+num;
+					}
+					
+					else {
+						
+						throw new ArithmeticException("Negative numbers not allowed"+num);
+					}
 				}
 				
 			}
